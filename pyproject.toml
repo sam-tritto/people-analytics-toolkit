@@ -1,0 +1,125 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "people-analytics-toolkit"
+version = "0.1.0"
+description = "Production-grade, mathematically rigorous feature engineering for People Analytics and Workforce Intelligence"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.10"
+authors = [
+    { name = "Sam Tritto" },
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "Intended Audience :: Financial and Insurance Industry",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Information Analysis",
+    "Topic :: Office/Business :: Financial",
+]
+keywords = [
+    "people-analytics",
+    "workforce-planning",
+    "feature-engineering",
+    "turnover-prediction",
+    "human-capital",
+    "lmdi",
+    "fractional-differencing",
+    "hawkes-process",
+    "ona",
+    "network-analysis",
+    "algorithmic-fairness",
+    "oaxaca-blinder",
+    "demographic-parity",
+    "individual-fairness",
+]
+dependencies = [
+    "numpy>=1.24.0",
+    "pandas>=2.0.0",
+    "scipy>=1.10.0",
+    "statsmodels>=0.14.0",
+    "networkx>=3.0.0",
+    "scikit-learn>=1.3.0",
+    "pingouin>=0.5.4",
+    "typing_extensions>=4.6.0; python_version < '3.11'",
+]
+
+[project.optional-dependencies]
+timeseries = [
+    "arch>=7.0.0",
+    "hmmlearn>=0.3.0",
+]
+anomalies = [
+    "pyod>=2.0.0",
+]
+deeplearning = [
+    "torch>=2.0.0",
+    "pyod>=2.0.0",
+]
+survival = [
+    "lifelines>=0.29.0",
+]
+explainability = [
+    "shap>=0.45.0",
+    "lightgbm>=4.0.0",
+]
+all = [
+    "people-analytics-toolkit[timeseries,anomalies,deeplearning,survival,explainability]",
+]
+dev = [
+    "pytest>=8.0.0",
+    "hypothesis>=6.90.0",
+    "matplotlib>=3.8.0",
+    "seaborn>=0.13.0",
+    "build>=1.0.0",
+    "twine>=5.0.0",
+    "ipykernel>=6.0.0",
+    "jupyterlab>=4.0.0",
+    "mypy>=1.9.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/sam-tritto/people-analytics-toolkit"
+Documentation = "https://sams-data-portfolio.com/projects/advanced-people-analytics-features"
+Repository = "https://github.com/sam-tritto/people-analytics-toolkit.git"
+Issues = "https://github.com/sam-tritto/people-analytics-toolkit/issues"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/people_analytics_toolkit", "data"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src", "."]
+testpaths = ["tests"]
+
+[tool.mypy]
+python_version = "3.10"
+ignore_missing_imports = true
+follow_imports = "silent"
+warn_unused_configs = true
+disallow_untyped_defs = false
+disallow_incomplete_defs = false
+check_untyped_defs = false
+warn_return_any = false
+warn_redundant_casts = false
+warn_unused_ignores = false
+disable_error_code = [
+    "import-untyped",
+    "assignment",
+    "arg-type",
+    "union-attr",
+    "attr-defined",
+    "no-any-return",
+    "type-arg",
+    "misc",
+    "operator",
+    "index",
+    "var-annotated",
+]
+show_error_codes = true
