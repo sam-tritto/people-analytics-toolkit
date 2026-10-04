@@ -16,11 +16,44 @@ A production-grade, mathematically rigorous framework and interactive tutorial p
 - `uv` package manager (version 0.8+)
 
 ### Installation
-Clone or navigate to the repository directory and synchronize dependencies using `uv`:
+
+#### From PyPI
+Install the core framework or include optional feature bundles in square brackets:
+
+```bash
+# Core package (base statistical and mathematical features)
+pip install people-analytics-toolkit
+
+# All optional feature engineering bundles
+pip install "people-analytics-toolkit[all]"
+
+# Or select specific domain bundles
+pip install "people-analytics-toolkit[timeseries,explainability]"
+```
+
+#### Optional Dependency Bundles
+
+| Extra | Included Libraries | Features & Capabilities Enabled |
+| :--- | :--- | :--- |
+| `[timeseries]` | `arch`, `hmmlearn` | GARCH(1,1) dynamic volatility indices, Hidden Markov Model (HMM) latent regimes |
+| `[anomalies]` | `pyod` | Local Outlier Factor (LOF) and density-based anomaly detectors |
+| `[deeplearning]` | `torch`, `pyod` | Autoencoder reconstruction error, deep trajectory embeddings |
+| `[survival]` | `lifelines` | Kaplan-Meier & Nelson-Aalen hazard rate embeddings, survival curves |
+| `[explainability]` | `shap`, `lightgbm` | 2D SHAP interaction matrices, turnover risk inflection thresholds |
+| `[all]` | *All of the above* | Complete 50-feature analytical and modeling suite |
+| `[dev]` | `pytest`, `hypothesis`, `jupyterlab`, `mypy`, `matplotlib`, `seaborn` | Development, property testing, CI validation, and interactive notebooks |
+
+#### Local Development with `uv`
+Clone or navigate to the repository directory and synchronize dependencies with desired extras:
 
 ```bash
 cd people-analytics-toolkit
-uv sync
+
+# Sync with all 50-feature mathematical dependencies:
+uv sync --extra all
+
+# Or sync all dependencies including testing, JupyterLab, and dev tooling:
+uv sync --all-extras
 ```
 
 ### Running the CLI Verification Script
