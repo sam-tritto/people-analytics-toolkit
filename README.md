@@ -6,7 +6,7 @@
 
 A production-grade, mathematically rigorous framework and interactive tutorial project implementing 50 advanced feature engineering techniques designed specifically for workforce intelligence, human capital management (HCM), and People Analytics.
 
-**Interactive Documentation & Live Walkthrough**: [https://sams-data-portfolio.com/projects/advanced-people-analytics-features](https://sams-data-portfolio.com/projects/advanced-people-analytics-features)
+**Interactive Documentation & Live Walkthrough**: [https://sams-data-portfolio.com/projects/people-analytics-toolkit](https://sams-data-portfolio.com/projects/people-analytics-toolkit)
 ---
 
 ## Quick Start
@@ -47,6 +47,10 @@ uv run jupyter lab notebooks/advanced_people_analytics_features.ipynb
 ```
 
 ---
+
+<p align="center">
+  <img src="logos/toby_2.jpg" alt="Architectural Problem Pillars" width="800" />
+</p>
 
 ## Architectural Problem Pillars
 
@@ -529,6 +533,10 @@ The 50 feature engineering techniques are structured across 11 fundamental opera
   - **Chi-Squared Anomaly Flagging**: Converting multi-attribute distances into rigorous $p$-values to prioritize HR governance reviews.
 
 ---
+
+<p align="center">
+  <img src="logos/toby_1.jpg" alt="Directory Structure" width="800" />
+</p>
 
 ## Directory Structure
 
