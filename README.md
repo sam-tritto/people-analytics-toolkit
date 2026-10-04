@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="logos/logo.png" alt="people-analytics-toolkit" width="600" />
+  <img src="https://raw.githubusercontent.com/sam-tritto/people-analytics-toolkit/main/logos/logo.png" alt="people-analytics-toolkit" width="600" />
 </p>
 
 # Advanced Feature Engineering for People Analytics
@@ -49,7 +49,7 @@ uv run jupyter lab notebooks/advanced_people_analytics_features.ipynb
 ---
 
 <p align="center">
-  <img src="logos/toby_2.jpg" alt="Architectural Problem Pillars" width="800" />
+  <img src="https://raw.githubusercontent.com/sam-tritto/people-analytics-toolkit/main/logos/toby_2.jpg" alt="Architectural Problem Pillars" width="800" />
 </p>
 
 ## Architectural Problem Pillars
@@ -535,7 +535,7 @@ The 50 feature engineering techniques are structured across 11 fundamental opera
 ---
 
 <p align="center">
-  <img src="logos/toby_1.jpg" alt="Directory Structure" width="800" />
+  <img src="https://raw.githubusercontent.com/sam-tritto/people-analytics-toolkit/main/logos/toby_1.jpg" alt="Directory Structure" width="800" />
 </p>
 
 ## Directory Structure
