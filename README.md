@@ -6,7 +6,7 @@
 
 A production-grade, mathematically rigorous framework and interactive tutorial project implementing 50 advanced feature engineering techniques designed specifically for workforce intelligence, human capital management (HCM), and People Analytics.
 
-**Interactive Documentation & Live Walkthrough**: [https://sams-data-portfolio.com/projects/people-analytics-toolkit](https://sams-data-portfolio.com/projects/people-analytics-toolkit)
+**Documentation & Walkthrough**: [https://sams-data-portfolio.com/projects/people-analytics-toolkit](https://sams-data-portfolio.com/projects/people-analytics-toolkit)
 ---
 
 ## Quick Start
